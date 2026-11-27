@@ -14,6 +14,7 @@
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
 
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
@@ -35,15 +36,43 @@
 
 \tableofcontents
 
-\section{Ordinary tensoring loses exactness}
+\section{Tensor products as adjoint functors}
 
-One problem with ordinary tensor products is that they do not preserve left-exactness.
+\subsection{Background on adjoint functors}
+
+Adjoint functors are a generalization of the concept of ``inverse functions," where $f\circ g=1_Y$ implies $f$ is $g$'s left-inverse and $g\circ f=1_X$ implies $g$ is $f$'s. Similarly, for functors $F:\mathcal{C}_1\to\mathcal{C}_2$ and $G:\mathcal{C}_2\to\mathcal{C}_1$, we say $F,G$ are left and right \emph{adjoints} if for all $X\in\mathcal{C}_1,Y\in\mathcal{C}_2$,
+\begin{align*}
+    \Phi_{X,Y}:\Hom_{\mathcal{C}_2}(F(X),Y)
+        \xrightarrow{\sim}\Hom_{\mathcal{C}_1}(X,G(Y)).
+\end{align*}
+These are bijections of sets, \emph{natural in both $X$ and $Y$}.
+Explicitly, for $a:X'\to X$, $b:Y\to Y'$, and $h:F(X)\to Y$,
+\begin{align*}
+    \Phi_{X',Y'}\bigl(b\circ h\circ F(a)\bigr)
+        =G(b)\circ\Phi_{X,Y}(h)\circ a.
+\end{align*}
+
+Why this definition?
+
+
+\begin{example}[Free groups]
+    
+\end{example}
+\begin{example}[The tensor-Hom adjunction]
+There is an isomorphism 
+\begin{align*}
+    \Hom(M\otimes N, P)\cong \Hom(M,\Hom(N,P))
+\end{align*}
+    
+\end{example}
+\subsection{Tensor products lose left-exactness}
 
 \begin{example}
     Consider the short exact sequence 
     \begin{align*}
-        \mathbb{Z}\longrightarrow\mathbb{Z}
+        \mathbb{Z}\longrightarrow
     \end{align*}
 \end{example}
+
 
 \end{document}
