@@ -1,0 +1,10 @@
+# LaTeX build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+/derived-tensor-products.pdf
+.DS_Store

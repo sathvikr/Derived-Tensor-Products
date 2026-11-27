@@ -1,0 +1,49 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage{tikz-cd}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Tor}{Tor}
+\DeclareMathOperator{\Ext}{Ext}
+\newcommand{\derivedtensor}{\otimes^{\mathbf{L}}}
+
+\title{Ma 120a --- Final Talk\\Derived Tensor Products}
+\author{Sathvik Redrouthu}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Ordinary tensoring loses exactness}
+
+One problem with ordinary tensor products is that they do not preserve left-exactness.
+
+\begin{example}
+    Consider the short exact sequence 
+    \begin{align*}
+        \mathbb{Z}\longrightarrow\mathbb{Z}
+    \end{align*}
+\end{example}
+
+\end{document}
