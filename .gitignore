@@ -6,5 +6,4 @@
 *.out
 *.synctex.gz
 *.toc
-/derived-tensor-products.pdf
 .DS_Store
